@@ -1,5 +1,5 @@
 {include file="header.tpl"}
 
-Test: {$title}
+{include file="slider.tpl"}
 
 {include file="footer.tpl"}

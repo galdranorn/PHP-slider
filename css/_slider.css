@@ -1,0 +1,77 @@
+.new-products {
+    font-family: Montserrat;
+    padding: 60px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* Section headers */
+
+.new-products .title, .new-products .subtitle {
+    font-size: 18px;
+}
+.new-products .title {
+    text-transform: uppercase;
+    color: #f6000e;
+    font-weight: bold;
+}
+.new-products .subtitle {
+    color: #6d6d6d;
+}
+
+/* Slider */
+
+.new-products .slider {
+    margin: 60px 0;
+}
+
+.new-products .product-box {
+    padding: 5px;
+}
+
+.new-products .product-content {
+    height: 100%;
+    background: #ffffff;
+}
+
+/* Product prices */
+
+.new-products .price {
+    text-align: left;
+    line-height: 40px;
+    padding: 10px;
+}
+.new-products .discount {
+    background: #f6000e;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+.new-products .actual-price {
+    color: #f6000e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.new-products .old-price {
+    color: #6d6d6d;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+/* Product title/buy now button */
+
+.new-products .name {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.new-products img {
+    width: 100%;
+}
+
+.new-products .slider .product-box .buy {}
+
