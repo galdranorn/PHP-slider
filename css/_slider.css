@@ -1,5 +1,5 @@
 .new-products {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     padding: 60px;
     background: #f8f8f8;
     text-align: center;
@@ -38,8 +38,9 @@
 
 .new-products .price {
     text-align: left;
+    height: 60px;
     line-height: 40px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 .new-products .discount {
     background: #f6000e;
@@ -62,16 +63,36 @@
     font-size: 14px;
 }
 
-/* Product title/buy now button */
-
-.new-products .name {
-    padding: 10px;
-    font-weight: bold;
-}
+/* Product image */
 
 .new-products img {
     width: 100%;
+    margin: 5px 0;
 }
 
-.new-products .slider .product-box .buy {}
+/* Product title/buy now button */
 
+.new-products .name, .new-products .hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.new-products .name {
+    height: 60px;
+    position: relative;
+}
+.new-products .description {
+    margin: 0;
+}
+.new-products .hover {
+    background: #e2e2e2;
+    color: #000000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.new-products .link {
+    color: #000000;
+}

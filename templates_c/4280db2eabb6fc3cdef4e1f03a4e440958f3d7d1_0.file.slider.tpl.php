@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-08-26 17:49:26
+/* Smarty version 3.1.32, created on 2019-08-26 19:23:03
   from 'D:\PROGRAMOWANIE\Programy\MAMP\htdocs\frontend\zadanie\templates\slider.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5d641ba64cadd0_96072534',
+  'unifunc' => 'content_5d643197512401_35614312',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4280db2eabb6fc3cdef4e1f03a4e440958f3d7d1' => 
     array (
       0 => 'D:\\PROGRAMOWANIE\\Programy\\MAMP\\htdocs\\frontend\\zadanie\\templates\\slider.tpl',
-      1 => 1566841724,
+      1 => 1566847372,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d641ba64cadd0_96072534 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d643197512401_35614312 (Smarty_Internal_Template $_smarty_tpl) {
 ?><SECTION class="new-products">
     <H1 class="title"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </H1>
@@ -28,16 +28,16 @@ function content_5d641ba64cadd0_96072534 (Smarty_Internal_Template $_smarty_tpl)
 </H2>
     
     <DIV class="container">
-        <DIV class="slider row">
+        <DIV id="slider" class="slider row">
             
         <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product', false, 'index');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['product']->value) {
 ?> 
-            <DIV class="product-box col-3">
+            <DIV data-key="<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
+" class="product-box col-3">
                 <DIV class="product-content">
-
                     <DIV class="price">
                         <?php if (isset($_smarty_tpl->tpl_vars['product']->value['discount'])) {?>
                             <?php $_smarty_tpl->_assignInScope('oldPrice', ((1+($_smarty_tpl->tpl_vars['product']->value['discount']/100))*$_smarty_tpl->tpl_vars['product']->value['price']));?>
@@ -59,13 +59,14 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 "/>
                     </DIV>
 
-                    <DIV class="buy">
-                        <DIV class="name">
-                            <?php echo $_smarty_tpl->tpl_vars['product']->value["prod-title"];?>
-
-                            <DIV id="buy-hover" class="invisible"><a href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
-">Kup teraz</a></DIV>
-                        </DIV>
+                    <DIV class="name">
+                            <p class="description"><?php echo $_smarty_tpl->tpl_vars['product']->value["prod-title"];?>
+</p>
+                            <DIV id="hover<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
+" class="hover">
+                                <A href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
+" class="link">Kup teraz</A>
+                            </DIV>
                     </DIV>
                 </DIV>
             </DIV>

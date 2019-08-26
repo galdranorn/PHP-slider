@@ -3,12 +3,11 @@
     <H2 class="subtitle">{$subtitle}</H2>
     
     <DIV class="container">
-        <DIV class="slider row">
+        <DIV id="slider" class="slider row">
             
-        {foreach from=$products item=product} 
-            <DIV class="product-box col-3">
+        {foreach from=$products key=index item=product} 
+            <DIV data-key="{$index}" class="product-box col-3">
                 <DIV class="product-content">
-
                     <DIV class="price">
                         {if isset($product.discount)}
                             {$oldPrice = ((1+($product.discount/100))*$product.price)}
@@ -24,11 +23,11 @@
                         <IMG src="{$product.image}" alt="{$product.{"prod-title"}}"/>
                     </DIV>
 
-                    <DIV class="buy">
-                        <DIV class="name">
-                            {$product.{"prod-title"}}
-                            <DIV id="buy-hover" class="invisible"><a href="{$product.link}">Kup teraz</a></DIV>
-                        </DIV>
+                    <DIV class="name">
+                            <p class="description">{$product.{"prod-title"}}</p>
+                            <DIV id="hover{$index}" class="hover">
+                                <A href="{$product.link}" class="link">Kup teraz</A>
+                            </DIV>
                     </DIV>
                 </DIV>
             </DIV>
