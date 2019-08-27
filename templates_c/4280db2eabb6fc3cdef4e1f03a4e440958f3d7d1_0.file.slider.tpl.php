@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-08-27 09:01:05
+/* Smarty version 3.1.32, created on 2019-08-27 16:21:04
   from 'D:\PROGRAMOWANIE\Programy\MAMP\htdocs\frontend\zadanie\templates\slider.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5d64f15126c9e8_51830895',
+  'unifunc' => 'content_5d655870a1a462_95867785',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4280db2eabb6fc3cdef4e1f03a4e440958f3d7d1' => 
     array (
       0 => 'D:\\PROGRAMOWANIE\\Programy\\MAMP\\htdocs\\frontend\\zadanie\\templates\\slider.tpl',
-      1 => 1566896460,
+      1 => 1566922860,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d64f15126c9e8_51830895 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d655870a1a462_95867785 (Smarty_Internal_Template $_smarty_tpl) {
 ?><SECTION class="new-products">
     <H1 class="title"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </H1>
@@ -35,8 +35,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['product']->value) {
 ?> 
-            <DIV data-key="<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
-" class="product-box col-12 col-sm-12 col-md-6 col-lg-3">
+            <DIV class="product-box col-sm-12 col-md-6 col-lg-3">
                 <DIV class="product-content">
                     <DIV class="price">
                         <?php if (isset($_smarty_tpl->tpl_vars['product']->value['discount'])) {?>

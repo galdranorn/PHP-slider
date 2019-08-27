@@ -6,7 +6,7 @@
         <DIV id="slider" class="slider row">
             
         {foreach from=$products key=index item=product} 
-            <DIV data-key="{$index}" class="product-box col-12 col-sm-12 col-md-6 col-lg-3">
+            <DIV class="product-box col-sm-12 col-md-6 col-lg-3">
                 <DIV class="product-content">
                     <DIV class="price">
                         {if isset($product.discount)}
