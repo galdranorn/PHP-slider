@@ -1,3 +1,5 @@
+@import url("_sliderAnimation.css");
+
 .new-products {
     font-family: 'Montserrat', sans-serif;
     padding: 60px;
@@ -24,11 +26,9 @@
 .new-products .slider {
     margin: 60px 0;
 }
-
 .new-products .product-box {
     padding: 5px;
 }
-
 .new-products .product-content {
     height: 100%;
     background: #ffffff;
@@ -68,31 +68,4 @@
 .new-products img {
     width: 100%;
     margin: 5px 0;
-}
-
-/* Product title/buy now button */
-
-.new-products .name, .new-products .hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-.new-products .name {
-    height: 60px;
-    position: relative;
-}
-.new-products .description {
-    margin: 0;
-}
-.new-products .hover {
-    background: #e2e2e2;
-    color: #000000;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.new-products .link {
-    color: #000000;
 }

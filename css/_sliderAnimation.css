@@ -1,0 +1,83 @@
+/* Product name box properties */
+
+.new-products .name, .new-products .hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.new-products .name {
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.new-products .description {
+    margin: 0;
+}
+.new-products .link {
+    color: #000000;
+}
+
+/* Product buy now animation on hover */
+
+.new-products .hover {
+    background: #e2e2e2;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: slideDown 600ms ease-out forwards;
+    -webkit-animation: slideDown 600ms ease-out forwards;
+}
+
+.new-products .product-content:hover .hover {
+    animation: slideUp 600ms ease-in forwards;
+    -webkit-animation: slideUp 600ms ease-in forwards;
+}
+
+
+/* Keyframes for animation */ 
+
+@keyframes slideUp  {
+    0% {
+        opacity:0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        display: block;
+    }
+}
+@keyframes slideDown  {
+    0% {
+        opacity:1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(400%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
