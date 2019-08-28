@@ -32,7 +32,7 @@
                 </DIV>
             </DIV>
         {/foreach}
+            
         </DIV>
     </DIV>
-    
 </SECTION>

@@ -33,7 +33,9 @@
     background: #ffffff;
     border-radius: 5px;
 }
-    /* Overwriting default Flickity styles */
+
+/* Slider - overwriting default Flickity styles */
+
 .flickity-viewport {
     width: 100%;
 }
